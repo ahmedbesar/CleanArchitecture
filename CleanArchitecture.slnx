@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Core/">
+    <Project Path="CleanArchitecture.Application/CleanArchitecture.Application.csproj" />
+    <Project Path="CleanArchitecture.Domain/CleanArchitecture.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="CleanArchitecture.Persistence/CleanArchitecture.Persistence.csproj" />
+  </Folder>
+  <Folder Name="/Presentation/">
+    <Project Path="CleanArchitecture/CleanArchitecture.Api.csproj" />
+  </Folder>
+</Solution>
