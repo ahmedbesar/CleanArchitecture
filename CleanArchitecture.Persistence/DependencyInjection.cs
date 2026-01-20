@@ -1,4 +1,6 @@
-﻿using CleanArchitecture.Persistence.Context;
+﻿using CleanArchitecture.Application.Common.Interfaces;
+using CleanArchitecture.Persistence.Context;
+using CleanArchitecture.Persistence.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -16,6 +18,7 @@ namespace CleanArchitecture.Persistence
             {
                 options.UseSqlServer(DefaultConnecation);
             });
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             return services;
         }
     }
